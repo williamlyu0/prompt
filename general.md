@@ -14,8 +14,11 @@ Here, we define a write-up format called "tree-write-up". The following is the s
     ...
     * {statements Zn that explain an aspect of the quote}
 ```
-The "INTERPRETATION" part means something very general. It can include anything that is remotely related to any interpretation of the quoted content. Think of it like relevant comment.
+
+The "INTERPRETATION" part means something very general. It can include anything that is remotely related to any interpretation of the quoted content. Think of it like relevant comment. Note that the quoted content should not be presented inside quotation marks.
+
 The "EXPANSION" part is for expanding upon several sub-aspects of the specified quote of statement X.
+
 Note that `{statements Yi}` or `{statements Zj}` can be treated as the new root (`{statements X}`) for recursive expansion. The scopes of `{statements Zi}` should sum up to the scope of the quoted part of X.
 
 # disambiguation notation
