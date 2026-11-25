@@ -23,11 +23,12 @@ Note that `{statements Yi}` or `{statements Zj}` can be treated as the new root 
 
 # disambiguation notation
 
-We shall define "disambiguation notation" as the notation `[ {phrase} @@ {disambiguator} ]` for disambiguating phrases. Phrases need disambiguation when such phrase has different meanings in a writeup. The `{phrase}` part can be a single word or a short phrase, while the `{disambiguator}` part is a short description providing enough context for differentiating the meaning of this word in a writeup. Consider the word "upstream" in the following writeup:
+We shall define "disambiguation notation" as the notation `[ {phrase} @@ {disambiguator} ]` for disambiguating phrases. Phrases need disambiguation when such phrase has different meanings in a writeup. The `{phrase}` part can be a single word or a short phrase, while the `{disambiguator}` part is a short description providing enough context for differentiating the meaning of this word in a writeup. Consider the word "memory" in the following writeup:
 ```
-StarlingX takes Debian source packages from the upstream APT repo, it also takes patches from upstream.
+I cannot recall how much memory I allocated to this data object from my memory.
 ```
-The first "upstream" is referring to "Debian upstream", while the second "upstream" is referring to the "software's upstream". As a result, one possible way for disambiguating the phrase "upstream" following our "disambiguation notation" is:
+
+The first "memory" is referring to the a hardware resource of a computer, while the second "memory" is referring to the my own recollection of events. A single word or phrase can have multiple meanings. When the same word or phrase with different meaning occurs within the same sentence or the same paragraph, we can use the "disambiguation notation" just like the following to rewrite the previous sentence:
 ```
-StarlingX takes Debian source packages from the [ upstream @@ Debian upstream ] APT repo, it also takes patches from [ upstream @@ software upstream which is not Debian ].
+I cannot recall how much [ memory @@ computer hardware resource ] I allocated to this data object from my [ memory @@ recollection of events ].
 ```
